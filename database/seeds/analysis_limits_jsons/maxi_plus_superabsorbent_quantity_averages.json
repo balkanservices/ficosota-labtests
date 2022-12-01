@@ -1,0 +1,11 @@
+{
+    "type": "maxi_plus",
+    "analysis_slug": "superabsorbent_quantity_averages",
+
+    "definition": {
+        "sap_quantity__sap_quantity" : {
+            "lower_limit": "11.5",
+            "upper_limit": "13.5"
+        }
+    }
+}

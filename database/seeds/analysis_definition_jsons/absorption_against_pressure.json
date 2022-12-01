@@ -1,0 +1,335 @@
+{
+    "name": "Absorption against pressure (AAP)",
+    "name_short": "AAP",
+    "slug": "absorption_against_pressure",
+
+    "definition": [
+        {
+            "name": "data_1",
+            "label_bg": "Данни 1",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "sap_weight",
+                    "label_bg": "Маса SAP, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "cylinder_weight",
+                    "label_bg": "Маса на цилиндър, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "weight_mass",
+                    "label_bg": "Маса на тежест, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "dry_cell_weight",
+                    "label_bg": "Маса на суха клетка, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "weight_after_absorption",
+                    "label_bg": "Маса след абсорбция, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "absorption_against_pressure",
+                    "label_bg": "Absorption against pressure, g/g",
+                    "type": "formula",
+                    "formula": "SUB_DIV",
+                    "formula_fields": {
+                        "first": "weight_after_absorption",
+                        "second": "dry_cell_weight",
+                        "divisor": "sap_weight"
+                    },
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "mpiston",
+                    "label_bg": "Маса на буталото, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "weight_g_cm2",
+                    "label_bg": "weight (g/cm2)",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "data_2",
+            "label_bg": "Данни 2",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "sap_weight",
+                    "label_bg": "Маса SAP, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "cylinder_weight",
+                    "label_bg": "Маса на цилиндър, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "weight_mass",
+                    "label_bg": "Маса на тежест, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "dry_cell_weight",
+                    "label_bg": "Маса на суха клетка, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "weight_after_absorption",
+                    "label_bg": "Маса след абсорбция, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "absorption_against_pressure",
+                    "label_bg": "Absorption against pressure, g/g",
+                    "type": "formula",
+                    "formula": "SUB_DIV",
+                    "formula_fields": {
+                        "first": "weight_after_absorption",
+                        "second": "dry_cell_weight",
+                        "divisor": "sap_weight"
+                    },
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "mpiston",
+                    "label_bg": "Маса на буталото, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "weight_g_cm2",
+                    "label_bg": "weight (g/cm2)",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "data_avg",
+            "label_bg": "Средни стойности",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "sap_weight",
+                    "label_bg": "Маса SAP, g",
+                    "type": "formula",
+                    "formula": "AVG",
+                    "formula_fields": [
+                        "data_1__sap_weight",
+                        "data_2__sap_weight"
+                    ],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "cylinder_weight",
+                    "label_bg": "Маса на цилиндър, g",
+                    "type": "formula",
+                    "formula": "AVG",
+                    "formula_fields": [
+                        "data_1__cylinder_weight",
+                        "data_2__cylinder_weight"
+                    ],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "weight_mass",
+                    "label_bg": "Маса на тежест, g",
+                    "type": "formula",
+                    "formula": "AVG",
+                    "formula_fields": [
+                        "data_1__weight_mass",
+                        "data_2__weight_mass"
+                    ],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "dry_cell_weight",
+                    "label_bg": "Маса на суха клетка, g",
+                    "type": "formula",
+                    "formula": "AVG",
+                    "formula_fields": [
+                        "data_1__dry_cell_weight",
+                        "data_2__dry_cell_weight"
+                    ],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "weight_after_absorption",
+                    "label_bg": "Маса след абсорбция, g",
+                    "type": "formula",
+                    "formula": "AVG",
+                    "formula_fields": [
+                        "data_1__weight_after_absorption",
+                        "data_2__weight_after_absorption"
+                    ],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "absorption_against_pressure",
+                    "label_bg": "Absorption against pressure, g/g",
+                    "type": "formula",
+                    "formula": "AVG",
+                    "formula_fields": [
+                        "data_1__absorption_against_pressure",
+                        "data_2__absorption_against_pressure"
+                    ],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "mpiston",
+                    "label_bg": "Маса на буталото, g",
+                    "type": "formula",
+                    "formula": "AVG",
+                    "formula_fields": [
+                        "data_1__mpiston",
+                        "data_2__mpiston"
+                    ],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "weight_g_cm2",
+                    "label_bg": "weight (g/cm2)",
+                    "type": "formula",
+                    "formula": "AVG",
+                    "formula_fields": [
+                        "data_1__weight_g_cm2",
+                        "data_2__weight_g_cm2"
+                    ],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "other",
+            "label_bg": "Други",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "comment",
+                    "label_bg": "Забележка",
+                    "type": "simple",
+                    "properties": {
+                        "type": "textarea"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "completion",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "analysis_complete",
+                    "label_bg": "Завършен анализ",
+                    "type": "checkbox",
+                    "multiple": false,
+                    "properties": {
+                        "type": "checkbox"
+                    },
+                    "options": {
+                        "completed": ""
+                    },
+                    "labels": {
+                        "not_completed": "samples_list.not_completed",
+                        "completed": "samples_list.completed"
+                    }
+                }
+            ]
+        }
+    ]
+}

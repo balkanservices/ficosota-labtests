@@ -1,0 +1,39 @@
+{
+    "type": "new_born",
+    "analysis_slug": "wetting_value_under_pressure",
+
+    "definition": {
+        "infusion__infusion_1" : {
+            "lower_limit":  null,
+            "upper_limit": "0.30"
+        },
+        "infusion__infusion_2" : {
+            "lower_limit":  null,
+            "upper_limit": "2.10"
+        },
+        "infusion__infusion_3" : {
+            "lower_limit":  null,
+            "upper_limit": "7.50"
+        },
+        "infusion__total_rewet" : {
+            "lower_limit":  null,
+            "upper_limit": "9.0"
+        },
+        "absorption__absorption_1" : {
+            "lower_limit":  null,
+            "upper_limit": "90"
+        },
+        "absorption__absorption_2" : {
+            "lower_limit":  null,
+            "upper_limit": "80"
+        },
+        "absorption__absorption_3" : {
+            "lower_limit":  null,
+            "upper_limit": "100"
+        },
+        "absorption__total_absorption_time" : {
+            "lower_limit":  null,
+            "upper_limit": "260"
+        }
+    }
+}

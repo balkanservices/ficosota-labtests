@@ -1,0 +1,150 @@
+{
+    "name": "Color Stability",
+    "name_short": "Col.Stab.",
+    "slug": "color_stability",
+
+    "definition": [
+        {
+            "name": "table_1",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "back_sheet",
+                    "label_bg": "BackSheet",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "p_n_back_sheet",
+                    "label_bg": "П.№ BackSheet",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "manifacturing_date",
+                    "label_bg": "Дата на производство",
+                    "type": "simple",
+                    "properties": {
+                        "type": "date"
+                    }
+                },
+                {
+                    "name": "solution_ph",
+                    "label_bg": "pH на разтвора",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "nh3oh_solution_ph",
+                    "label_bg": "рН на разтвора с NH₃OH",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "table_2",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "analyzed_diapers_count",
+                    "label_bg": "Брой анализирани пелени",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "readonly": true
+                    }
+                },
+                {
+                    "name": "non_compliant_diapers_count",
+                    "label_bg": "Брой несъответстващи пелени",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "percentage_of_non_compliance",
+                    "label_bg": "Процент на несъответствие, %",
+                    "type": "formula",
+                    "formula": "PERCENTAGE",
+                    "formula_fields": {"total": "analyzed_diapers_count", "part": "non_compliant_diapers_count"},
+                    "properties": {
+                        "type": "number"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "table_3",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "design",
+                    "label_bg": "Дизайн",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "results",
+                    "label_bg": "Резултати",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "other",
+            "label_bg": "Други",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "comment",
+                    "label_bg": "Забележка",
+                    "type": "simple",
+                    "properties": {
+                        "type": "textarea"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "completion",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "analysis_complete",
+                    "label_bg": "Завършен анализ",
+                    "type": "checkbox",
+                    "multiple": false,
+                    "properties": {
+                        "type": "checkbox"
+                    },
+                    "options": {
+                        "completed": ""
+                    },
+                    "labels": {
+                        "not_completed": "samples_list.not_completed",
+                        "completed": "samples_list.completed"
+                    }
+                }
+            ]
+        }
+    ]
+}

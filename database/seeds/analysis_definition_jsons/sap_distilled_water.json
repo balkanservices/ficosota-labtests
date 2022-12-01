@@ -1,0 +1,69 @@
+{
+    "name": "Разпределение на SAP в дестилирана вода",
+    "name_short": "SAP_Dist_h2o",
+    "slug": "sap_distilled_water",
+
+    "definition": [
+        {
+            "name": "table_1",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "sap_distribution",
+                    "label_bg": "Разпределение на SAP",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "presence_of_free_superabsorbent_on_the_surface",
+                    "label_bg": "Наличие на свободен суперабсорбент по повърхността",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "other",
+            "label_bg": "Други",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "comment",
+                    "label_bg": "Забележка",
+                    "type": "simple",
+                    "properties": {
+                        "type": "textarea"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "completion",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "analysis_complete",
+                    "label_bg": "Завършен анализ",
+                    "type": "checkbox",
+                    "multiple": false,
+                    "properties": {
+                        "type": "checkbox"
+                    },
+                    "options": {
+                        "completed": ""
+                    },
+                    "labels": {
+                        "not_completed": "samples_list.not_completed",
+                        "completed": "samples_list.completed"
+                    }
+                }
+            ]
+        }
+    ]
+}

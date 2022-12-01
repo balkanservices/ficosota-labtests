@@ -1,0 +1,266 @@
+{
+    "name": "Grammage of materials (gsm)",
+    "name_short": "gsm",
+    "slug": "grammage_of_materials",
+
+    "definition": [
+        {
+            "name": "table_1",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "top_sheet_grammage",
+                    "label_bg": "Grammage of top sheet, g/m2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "top_core_wrapping_grammage",
+                    "label_bg": "Grammage of Top Core Wrapping, g/m2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "bottom_core_wrapping_grammage",
+                    "label_bg": "Grammage of Bottom Core Wrapping, g/m2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "core_wrapping_grammage",
+                    "label_bg": "Grammage of Core Wrapping, g/m2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "table_2",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "landing_zone_grammage",
+                    "label_bg": "Grammage of Landing zone, g/m2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "front_wings_grammage",
+                    "label_bg": "Grammage of Front Wings, g/m2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "back_wings_grammage",
+                    "label_bg": "Grammage of Back Wings, g/m2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "waist_band",
+            "label_bg": "Waist band",
+            "type": "group",
+            "grouped_headers": [
+                {
+                    "name": "grammage_nw_front_side",
+                    "label_bg": "Grammage of NW – front side, g/m2",
+                    "fields": ["grammage_nw_front_side_top", "grammage_nw_front_side_bottom"]
+                },
+                {
+                    "name": "grammage_nw_back_side",
+                    "label_bg": "Grammage of NW – back side, g/m2",
+                    "fields": ["grammage_nw_back_side_top", "grammage_nw_back_side_bottom"]
+                }
+            ],
+            "group_fields": [
+                {
+                    "name": "grammage_nw_front_side_top",
+                    "label_bg": "Grammage of top NW, g/m2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "grammage_nw_front_side_bottom",
+                    "label_bg": "Grammage of bottom NW, g/m2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "grammage_nw_back_side_top",
+                    "label_bg": "Grammage of top NW, g/m2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "grammage_nw_back_side_bottom",
+                    "label_bg": "Grammage of bottom NW, g/m2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "back_sheet",
+            "label_bg": "Back Sheet",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "pe_back_sheet_grammage",
+                    "label_bg": "Grammage of PE-BackSheet, g/m2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "nw_back_sheet_grammage",
+                    "label_bg": "Grammage of NW-BackSheet, g/m2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "total_back_sheet_grammage",
+                    "label_bg": "Grammage of Total BackSheet, g/m2",
+                    "type": "formula",
+                    "formula": "SUM",
+                    "formula_fields": ["pe_back_sheet_grammage", "nw_back_sheet_grammage"],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "acquisition_distribution_layer",
+            "label_bg": "ADL /Acquisition Distribution Layer/",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "adl_grammage",
+                    "label_bg": "Grammage of ADL, g/m2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "adl_colour",
+                    "label_bg": "Colour of ADL",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "adl_dimensions",
+                    "label_bg": "Dimensions of ADL, mm",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "leg_cuffs",
+            "label_bg": "Leg cuffs",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "leg_cuffs_grammage",
+                    "label_bg": "Grammage of leg cuffs, g/m2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "leg_cuffs_colour",
+                    "label_bg": "Colour of leg cuffs",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "other",
+            "label_bg": "Други",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "comment",
+                    "label_bg": "Забележка",
+                    "type": "simple",
+                    "properties": {
+                        "type": "textarea"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "completion",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "analysis_complete",
+                    "label_bg": "Завършен анализ",
+                    "type": "checkbox",
+                    "multiple": false,
+                    "properties": {
+                        "type": "checkbox"
+                    },
+                    "options": {
+                        "completed": ""
+                    },
+                    "labels": {
+                        "not_completed": "samples_list.not_completed",
+                        "completed": "samples_list.completed"
+                    }
+                }
+            ]
+        }
+    ]
+}

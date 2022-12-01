@@ -1,0 +1,35 @@
+{
+    "type": "junior",
+    "analysis_slug": "wetting_value",
+
+    "definition": {
+        "infusion__infusion_1" : {
+            "lower_limit":  null,
+            "upper_limit": "0.80"
+        },
+        "infusion__infusion_2" : {
+            "lower_limit":  null,
+            "upper_limit": "3.50"
+        },
+        "infusion__infusion_3" : {
+            "lower_limit":  null,
+            "upper_limit": "14.50"
+        },
+        "infusion__total_rewet" : {
+            "lower_limit":  null,
+            "upper_limit": "15.5"
+        },
+        "absorption__absorption_1" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        },
+        "absorption__absorption_2" : {
+            "lower_limit":  null,
+            "upper_limit": "25"
+        },
+        "absorption__absorption_3" : {
+            "lower_limit":  null,
+            "upper_limit": "30"
+        }
+    }
+}

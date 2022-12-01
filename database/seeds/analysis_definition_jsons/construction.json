@@ -1,0 +1,2185 @@
+{
+    "name": "Конструкция",
+    "name_short": "Констр.",
+    "slug": "construction",
+
+    "definition": [
+        {
+            "name": "general_dimensions",
+            "label_bg": "Основни размери",
+            "type": "tab_group",
+            "group_fields": [
+                {
+                    "name": "chassis",
+                    "label_bg": "Chassis",
+                    "type": "group",
+                    "group_fields": [
+                        {
+                            "name": "chassis",
+                            "label_bg": "Chassis",
+                            "type": "simple",
+                            "properties": {
+                                "type": "text"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "dimensions",
+                    "label_bg": "Размери",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "external_dimensions",
+                            "label_bg": "Външни размери, mm",
+                            "fields": ["external_dimensions_length", "external_dimensions_width"]
+                        },
+                        {
+                            "name": "diaper_width",
+                            "label_bg": "Ширина на пелената – full shape chassis, mm",
+                            "fields": ["diaper_width_front", "diaper_width_back"]
+                        },
+                        {
+                            "name": "internal_dimensions",
+                            "label_bg": "Вътрешни размери, mm",
+                            "fields": ["internal_dimensions_length", "internal_dimensions_front_width", "internal_dimensions_center_width", "internal_dimensions_back_width"]
+                        },
+                        {
+                            "name": "internal_cf_dimensions",
+                            "label_bg": "Вътрешни размери на C.F., mm",
+                            "fields": ["internal_cf_dimensions_length", "internal_cf_dimensions_front_width", "internal_cf_dimensions_center_width", "internal_cf_dimensions_back_width"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "external_dimensions_length",
+                            "label_bg": "Дължина на пелената",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "external_dimensions_width",
+                            "label_bg": "Ширина на пелената",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "diaper_width_front",
+                            "label_bg": "Предна част",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "diaper_width_back",
+                            "label_bg": "Задна част",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "internal_dimensions_length",
+                            "label_bg": "Дължина на сърцевината",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "internal_dimensions_front_width",
+                            "label_bg": "Ширина на сърцевината в преден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "internal_dimensions_center_width",
+                            "label_bg": "Ширина на сърцевината в среда",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "internal_dimensions_back_width",
+                            "label_bg": "Ширина на сърцевината в заден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "internal_cf_dimensions_length",
+                            "label_bg": "Дължина на C.F., mm",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "internal_cf_dimensions_front_width",
+                            "label_bg": "Ширина на C.F. в преден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "internal_cf_dimensions_center_width",
+                            "label_bg": "Ширина на C.F в средата",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "internal_cf_dimensions_back_width",
+                            "label_bg": "Ширина на C.F в заден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "leg_cuffs",
+                    "label_bg": "Leg cuffs",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "leg_cuffs_distance",
+                            "label_bg": "Разстояние между leg cuffs, mm",
+                            "fields": ["leg_cuffs_distance_front", "leg_cuffs_distance_back"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "leg_cuffs_distance_front",
+                            "label_bg": "Преден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "leg_cuffs_distance_back",
+                            "label_bg": "Заден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "leg_cuffs_color",
+                            "label_bg": "Цвят на leg cuffs",
+                            "type": "simple",
+                            "properties": {
+                                "type": "text"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "tack_down_and_code_spacing",
+                    "label_bg": "Tack down и отстояние от ядрото",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "tack_down_left",
+                            "label_bg": "Tack down, mm (left)",
+                            "fields": ["tack_down_left_front", "tack_down_left_back"]
+                        },
+                        {
+                            "name": "tack_down_right",
+                            "label_bg": "Tack down, mm (right)",
+                            "fields": ["tack_down_right_front", "tack_down_right_back"]
+                        },
+                        {
+                            "name": "core_spacing",
+                            "label_bg": "Отстояние на ядрото",
+                            "fields": ["core_distance_from_front_end", "core_distance_from_back_end"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "tack_down_left_front",
+                            "label_bg": "преден",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "tack_down_left_back",
+                            "label_bg": "заден",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "tack_down_right_front",
+                            "label_bg": "преден",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "tack_down_right_back",
+                            "label_bg": "заден",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "core_distance_from_front_end",
+                            "label_bg": "Отстояние от преден край, mm",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "core_distance_from_back_end",
+                            "label_bg": "Отстояние от заден край, mm",
+                            "type": "formula",
+                            "formula": "SUB_MULTIPLE",
+                            "formula_fields": [
+                                "general_dimensions__dimensions__external_dimensions_length",
+                                "general_dimensions__dimensions__internal_dimensions_length",
+                                "general_dimensions__tack_down_and_code_spacing__core_distance_from_front_end"
+                            ],
+                            "properties": {
+                                "type": "number",
+                                "step": "0.01"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ears",
+            "label_bg": "Уши",
+            "type": "tab_group",
+            "group_fields": [
+                {
+                    "name": "placement_and_color",
+                    "label_bg": "Разположение и цвят",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "front_ears_placement",
+                            "label_bg": "Разположение на уши, mm (Предни уши)",
+                            "fields": ["front_ears_placement_left", "front_ears_placement_right"]
+                        },
+                        {
+                            "name": "back_ears_placement",
+                            "label_bg": "Разположение на уши, mm (Задни уши)",
+                            "fields": ["back_ears_placement_left", "back_ears_placement_right"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "front_ears_placement_left",
+                            "label_bg": "left",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_ears_placement_right",
+                            "label_bg": "right",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_ears_placement_left",
+                            "label_bg": "left",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_ears_placement_right",
+                            "label_bg": "right",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_ears_color",
+                            "label_bg": "Цвят на предни уши",
+                            "type": "simple",
+                            "properties": {
+                                "type": "text"
+                            }
+                        },
+                        {
+                            "name": "back_ears_color",
+                            "label_bg": "Цвят на задни уши",
+                            "type": "simple",
+                            "properties": {
+                                "type": "text"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "height_and_width",
+                    "label_bg": "Ширина и дължина",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "ears_width_left",
+                            "label_bg": "Ширина на уши, mm (left)",
+                            "fields": ["ears_width_left_front", "ears_width_left_back"]
+                        },
+                        {
+                            "name": "ears_width_right",
+                            "label_bg": "Ширина на уши, mm (right)",
+                            "fields": ["ears_width_right_front", "ears_width_right_back"]
+                        },
+                        {
+                            "name": "ears_length_left",
+                            "label_bg": "Дължина на уши, mm (left)",
+                            "fields": ["ears_length_left_front", "ears_length_left_back"]
+                        },
+                        {
+                            "name": "ears_length_right",
+                            "label_bg": "Дължина на уши, mm (right)",
+                            "fields": ["ears_length_right_front", "ears_length_right_back"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "ears_width_left_front",
+                            "label_bg": "предни уши",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "ears_width_left_back",
+                            "label_bg": "задни уши",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "ears_width_right_front",
+                            "label_bg": "предни уши",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "ears_width_right_back",
+                            "label_bg": "задни уши",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "ears_length_left_front",
+                            "label_bg": "предни уши",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "ears_length_left_back",
+                            "label_bg": "задни уши",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "ears_length_right_front",
+                            "label_bg": "предни уши",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "ears_length_right_back",
+                            "label_bg": "задни уши",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "overlapping",
+                    "label_bg": "Застъпване",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "front_ears_diaper_overlapping",
+                            "label_bg": "Застъпване на ушите с пелената, mm (Предни уши)",
+                            "fields": ["front_ears_diaper_overlapping_left", "front_ears_diaper_overlapping_right"]
+                        },
+                        {
+                            "name": "back_ears_diaper_overlapping",
+                            "label_bg": "Застъпване на ушите с пелената, mm (Задни уши)",
+                            "fields": ["back_ears_diaper_overlapping_left", "back_ears_diaper_overlapping_right"]
+                        },
+                        {
+                            "name": "front_back_ears_overlapping",
+                            "label_bg": "Застъпване на предни и задни уши, mm",
+                            "fields": ["front_back_ears_overlapping_left", "front_back_ears_overlapping_right"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "front_ears_diaper_overlapping_left",
+                            "label_bg": "left",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_ears_diaper_overlapping_right",
+                            "label_bg": "right",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_ears_diaper_overlapping_left",
+                            "label_bg": "left",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_ears_diaper_overlapping_right",
+                            "label_bg": "right",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_back_ears_overlapping_left",
+                            "label_bg": "left",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_back_ears_overlapping_right",
+                            "label_bg": "right",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "sticking",
+                    "label_bg": "Залепяне",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "ears_sticking_length",
+                            "label_bg": "Дължина на залепяне на ушите, mm",
+                            "fields": ["ears_sticking_length_left", "ears_sticking_length_right"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "ears_sticking_length_left",
+                            "label_bg": "left",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "ears_sticking_length_right",
+                            "label_bg": "right",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "ears_sticking_type",
+                            "label_bg": "Вид на залепяне на ушите",
+                            "type": "simple",
+                            "properties": {
+                                "type": "text"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ears__barriers_height_and_adl",
+            "label_bg": "Височина на бариерите и ADL",
+            "type": "group",
+            "grouped_headers": [
+                {
+                    "name": "barriers_height",
+                    "label_bg": "Височина на бариерите, mm",
+                    "fields": ["barriers_height_left", "barriers_height_right"]
+                }
+            ],
+            "group_fields": [
+                {
+                    "name": "barriers_height_left",
+                    "label_bg": "височина на лява бариера",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "barriers_height_right",
+                    "label_bg": "височина на дясна бариера",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "adl_position_relative_to_front_end",
+                    "label_bg": "Разположение на ADL спрямо преден край на пелената, mm",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "adl_color",
+                    "label_bg": "Цвят на ADL",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "adl_length",
+                    "label_bg": "Дължина на ADL, mm",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "adl_width",
+                    "label_bg": "Ширина на ADL, mm",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "elastics_distance_from_front_back_end",
+            "label_bg": "Отстояние на ластици от преден/заден край на пелената, mm",
+            "type": "tab_group",
+            "group_fields": [
+                {
+                    "name": "cuff_left",
+                    "label_bg": "Cuff left",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "front_end",
+                            "label_bg": "отстояние от преден край",
+                            "fields": ["front_end_inside", "front_end_middle_1", "front_end_middle_2", "front_end_middle_3", "front_end_outside"]
+                        },
+                        {
+                            "name": "back_end",
+                            "label_bg": "отстояние от заден край",
+                            "fields": ["back_end_inside", "back_end_middle_1", "back_end_middle_2", "back_end_middle_3", "back_end_outside"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "front_end_inside",
+                            "label_bg": "вътрешен cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_end_middle_1",
+                            "label_bg": "1-ви среден cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_end_middle_2",
+                            "label_bg": "2-ри среден cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_end_middle_3",
+                            "label_bg": "3-ти среден cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_end_outside",
+                            "label_bg": "външен cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_end_inside",
+                            "label_bg": "вътрешен cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_end_middle_1",
+                            "label_bg": "1-ви среден cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_end_middle_2",
+                            "label_bg": "2-ри среден cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_end_middle_3",
+                            "label_bg": "3-ти среден cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_end_outside",
+                            "label_bg": "външен cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "cuff_right",
+                    "type": "group",
+                    "label_bg": "Cuff right",
+                    "grouped_headers": [
+                        {
+                            "name": "front_end",
+                            "label_bg": "отстояние от преден край",
+                            "fields": ["front_end_inside", "front_end_middle_1", "front_end_middle_2", "front_end_middle_3", "front_end_outside"]
+                        },
+                        {
+                            "name": "back_end",
+                            "label_bg": "отстояние от заден край",
+                            "fields": ["back_end_inside", "back_end_middle_1", "back_end_middle_2", "back_end_middle_3", "back_end_outside"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "front_end_inside",
+                            "label_bg": "вътрешен cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_end_middle_1",
+                            "label_bg": "1-ви среден cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_end_middle_2",
+                            "label_bg": "2-ри среден cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_end_middle_3",
+                            "label_bg": "3-ти среден cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_end_outside",
+                            "label_bg": "външен cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_end_inside",
+                            "label_bg": "вътрешен cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_end_middle_1",
+                            "label_bg": "1-ви среден cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_end_middle_2",
+                            "label_bg": "2-ри среден cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_end_middle_3",
+                            "label_bg": "3-ти среден cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_end_outside",
+                            "label_bg": "външен cuff elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "leg_left",
+                    "label_bg": "Leg left",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "front_end",
+                            "label_bg": "отстояние от преден край",
+                            "fields": ["front_end_inside", "front_end_middle", "front_end_outside"]
+                        },
+                        {
+                            "name": "back_end",
+                            "label_bg": "отстояние от заден край",
+                            "fields": ["back_end_inside", "back_end_middle", "back_end_outside"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "front_end_inside",
+                            "label_bg": "вътрешен leg elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_end_middle",
+                            "label_bg": "среден leg elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_end_outside",
+                            "label_bg": "външен leg elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_end_inside",
+                            "label_bg": "вътрешен leg elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_end_middle",
+                            "label_bg": "среден leg elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_end_outside",
+                            "label_bg": "външен leg elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "leg_right",
+                    "type": "group",
+                    "label_bg": "Leg right",
+                    "grouped_headers": [
+                        {
+                            "name": "front_end",
+                            "label_bg": "отстояние от преден край",
+                            "fields": ["front_end_inside", "front_end_middle", "front_end_outside"]
+                        },
+                        {
+                            "name": "back_end",
+                            "label_bg": "отстояние от заден край",
+                            "fields": ["back_end_inside", "back_end_middle", "back_end_outside"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "front_end_inside",
+                            "label_bg": "вътрешен leg elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_end_middle",
+                            "label_bg": "среден leg elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_end_outside",
+                            "label_bg": "външен leg elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_end_inside",
+                            "label_bg": "вътрешен leg elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_end_middle",
+                            "label_bg": "среден leg elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_end_outside",
+                            "label_bg": "външен leg elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "bottom_core_wrapping_backsheet_pe_elastics_distance",
+            "label_bg": "Отстояние на ластиците, разположени между долен core wrapping и PE на BackSheet, mm",
+            "type": "group",
+            "grouped_headers": [
+                {
+                    "name": "left_elastic",
+                    "label_bg": "Left elastic",
+                    "fields": ["left_elastic_distance_from_front", "left_elastic_distance_from_back"]
+                },
+                {
+                    "name": "right_elastic",
+                    "label_bg": "Right elastic",
+                    "fields": ["right_elastic_distance_from_front", "right_elastic_distance_from_back"]
+                }
+            ],
+            "group_fields": [
+                {
+                    "name": "left_elastic_distance_from_front",
+                    "label_bg": "отстояние от преден край",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "left_elastic_distance_from_back",
+                    "label_bg": "отстояние от заден край",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "right_elastic_distance_from_front",
+                    "label_bg": "отстояние от преден край",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "right_elastic_distance_from_back",
+                    "label_bg": "отстояние от заден край",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "round_elastics",
+            "label_bg": "Round elastics",
+            "type": "tab_group",
+            "group_fields": [
+                {
+                    "name": "leg_round_elastics_distance",
+                    "type": "group",
+                    "label_bg": "Разстояние между LEG round elastics, mm",
+                    "grouped_headers": [
+                        {
+                            "name": "left_elastics",
+                            "label_bg": "Left elastics",
+                            "fields": ["left_elastics_outside_middle_distance", "left_elastics_1st_middle_2nd_middle_distance", "left_elastics_middle_inside_distance"]
+                        },
+                        {
+                            "name": "right_elastics",
+                            "label_bg": "Right elastics",
+                            "fields": ["right_elastics_outside_middle_distance", "right_elastics_1st_middle_2nd_middle_distance", "right_elastics_middle_inside_distance"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "left_elastics_outside_middle_distance",
+                            "label_bg": "разстояние между външен и среден elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "left_elastics_1st_middle_2nd_middle_distance",
+                            "label_bg": "разстояние между 1-ви среден и 2-ри среден elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "left_elastics_middle_inside_distance",
+                            "label_bg": "разстояние между среден и вътрешен elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "right_elastics_outside_middle_distance",
+                            "label_bg": "разстояние между външен и среден elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "right_elastics_1st_middle_2nd_middle_distance",
+                            "label_bg": "разстояние между 1-ви среден и 2-ри среден elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "right_elastics_middle_inside_distance",
+                            "label_bg": "разстояние между среден и вътрешен elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "cuff_round_elastics_distance",
+                    "label_bg": "Разстояние между CUFF round elastics, mm",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "left_elastics",
+                            "label_bg": "Left elastics",
+                            "fields": ["left_elastics_outside_middle_distance", "left_elastics_middle_inside_distance"]
+                        },
+                        {
+                            "name": "right_elastics",
+                            "label_bg": "Right elastics",
+                            "fields": ["right_elastics_outside_middle_distance", "right_elastics_middle_inside_distance"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "left_elastics_outside_middle_distance",
+                            "label_bg": "разстояние между външен и среден elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "left_elastics_middle_inside_distance",
+                            "label_bg": "разстояние между среден и вътрешен elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "right_elastics_outside_middle_distance",
+                            "label_bg": "разстояние между външен и среден elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "right_elastics_middle_inside_distance",
+                            "label_bg": "разстояние между среден и вътрешен elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "flat_elastics",
+            "label_bg": "Flat elastics",
+            "type": "tab_group",
+            "group_fields": [
+                {
+                    "name": "leg_flat_elastics_distance",
+                    "label_bg": "Разстояние между LEG flat elastics, mm",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "left_elastics",
+                            "label_bg": "Left elastics",
+                            "fields": ["left_elastics_outside_middle_distance", "left_elastics_middle_inside_distance"]
+                        },
+                        {
+                            "name": "right_elastics",
+                            "label_bg": "Right elastics",
+                            "fields": ["right_elastics_outside_middle_distance", "right_elastics_middle_inside_distance"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "left_elastics_outside_middle_distance",
+                            "label_bg": "разстояние между външен и среден elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "left_elastics_middle_inside_distance",
+                            "label_bg": "разстояние между среден и вътрешен elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "right_elastics_outside_middle_distance",
+                            "label_bg": "разстояние между външен и среден elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "right_elastics_middle_inside_distance",
+                            "label_bg": "разстояние между среден и вътрешен elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "cuff_flat_elastics_distance",
+                    "label_bg": "Разстояние между CUFF flat elastics, mm",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "left_elastics",
+                            "label_bg": "Left elastics",
+                            "fields": ["left_elastics_outside_middle_distance", "left_elastics_middle_inside_distance"]
+                        },
+                        {
+                            "name": "right_elastics",
+                            "label_bg": "Right elastics",
+                            "fields": ["right_elastics_outside_middle_distance", "right_elastics_middle_inside_distance"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "left_elastics_outside_middle_distance",
+                            "label_bg": "разстояние между външен и среден elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "left_elastics_middle_inside_distance",
+                            "label_bg": "разстояние между среден и вътрешен elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "right_elastics_outside_middle_distance",
+                            "label_bg": "разстояние между външен и среден elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "right_elastics_middle_inside_distance",
+                            "label_bg": "разстояние между среден и вътрешен elastic",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "landing_zone",
+            "label_bg": "Landing Zone",
+            "type": "group",
+            "grouped_headers": [
+                {
+                    "name": "langing_zone_position",
+                    "label_bg": "Разположение на Landing Zone, mm",
+                    "fields": ["langing_zone_position_left", "langing_zone_position_middle", "langing_zone_position_right"]
+                },
+                {
+                    "name": "landing_zone_zones",
+                    "label_bg": "Зониран Landing zone, mm",
+                    "fields": ["landing_zone_zones_1_1", "landing_zone_zones_2_2", "landing_zone_zones_3_3"]
+                }
+            ],
+            "group_fields": [
+                {
+                    "name": "langing_zone_position_left",
+                    "label_bg": "Left",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "langing_zone_position_middle",
+                    "label_bg": "Middle",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "langing_zone_position_right",
+                    "label_bg": "Right",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "landing_zone_length",
+                    "label_bg": "Дължина на Landing Zone, mm",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "landing_zone_width",
+                    "label_bg": "Ширина на Landing Zone, mm",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "landing_zone_zones_1_1",
+                    "label_bg": "Зона 1-1",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "landing_zone_zones_2_2",
+                    "label_bg": "Зона 2-2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "landing_zone_zones_3_3",
+                    "label_bg": "Зона 3-3",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "tape_tabs",
+            "label_bg": "Tape tabs",
+            "type": "group",
+            "grouped_headers": [
+                {
+                    "name": "tape_tabs_to_front_end_distance",
+                    "label_bg": "Разстояние от tape tabs до преден край на пелената, mm",
+                    "fields": ["tape_tabs_to_front_end_distance_left_tt", "tape_tabs_to_front_end_distance_right_tt"]
+                }
+            ],
+            "group_fields": [
+                {
+                    "name": "tape_tabs_to_front_end_distance_left_tt",
+                    "label_bg": "Left TT",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "tape_tabs_to_front_end_distance_right_tt",
+                    "label_bg": "Right TT",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "tape_tabs_color",
+                    "label_bg": "Цвят на tape tabs",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "tape_tabs_length",
+                    "label_bg": "Дължина на tape tabs",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "waist_band",
+            "label_bg": "Waist band",
+            "type": "tab_group",
+            "group_fields": [
+                {
+                    "name": "waist_band_elastics",
+                    "label_bg": "Waist band elastics",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "front_elastics",
+                            "label_bg": "Elastics – front, mm",
+                            "fields": ["front_elastics_waist_band_width_free_state", "front_elastics_waist_band_width_stretched_state", "front_elastics_waist_band_length"]
+                        },
+                        {
+                            "name": "back_elastics",
+                            "label_bg": "Elastics – back, mm",
+                            "fields": ["back_elastics_waist_band_width_free_state", "back_elastics_waist_band_width_stretched_state", "back_elastics_waist_band_length"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "front_elastics_waist_band_width_free_state",
+                            "label_bg": "Ширина в свободно състояние",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_elastics_waist_band_width_stretched_state",
+                            "label_bg": "Ширина в разпънато състояние",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_elastics_waist_band_length",
+                            "label_bg": "Дължина",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_elastics_waist_band_width_free_state",
+                            "label_bg": "Ширина в свободно състояние",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_elastics_waist_band_width_stretched_state",
+                            "label_bg": "Ширина в разпънато състояние",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_elastics_waist_band_length",
+                            "label_bg": "Дължина",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "waist_band_foam",
+                    "label_bg": "Waist band foam",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "front_foam",
+                            "label_bg": "Foam – front, mm",
+                            "fields": ["front_foam_waist_band_width_free_state", "front_foam_waist_band_width_stretched_state", "front_foam_waist_band_length", "front_foam_color"]
+                        },
+                        {
+                            "name": "back_foam",
+                            "label_bg": "Foam – back, mm",
+                            "fields": ["back_foam_waist_band_width_free_state", "back_foam_waist_band_width_stretched_state", "back_foam_waist_band_length", "back_foam_color"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "front_foam_waist_band_width_free_state",
+                            "label_bg": "Ширина в свободно състояние",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_foam_waist_band_width_stretched_state",
+                            "label_bg": "Ширина в разпънато състояние",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_foam_waist_band_length",
+                            "label_bg": "Дължина",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_foam_color",
+                            "label_bg": "Цвят",
+                            "type": "simple",
+                            "properties": {
+                                "type": "text"
+                            }
+                        },
+                        {
+                            "name": "back_foam_waist_band_width_free_state",
+                            "label_bg": "Ширина в свободно състояние",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_foam_waist_band_width_stretched_state",
+                            "label_bg": "Ширина в разпънато състояние",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_foam_waist_band_length",
+                            "label_bg": "Дължина",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_foam_color",
+                            "label_bg": "Цвят",
+                            "type": "simple",
+                            "properties": {
+                                "type": "text"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "foam_rubber",
+                    "label_bg": "Дунапренено коланче",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "front_foam_rubber",
+                            "label_bg": "Дунапренено коланче – foam rubber (front), mm",
+                            "fields": ["front_foam_rubber_color", "front_foam_rubber_width", "front_foam_rubber_front_length", "front_foam_rubber_middle_length", "front_foam_rubber_back_length"]
+                        },
+                        {
+                            "name": "back_foam_rubber",
+                            "label_bg": "Дунапренено коланче – foam rubber (back), mm",
+                            "fields": ["back_foam_rubber_color", "back_foam_rubber_width", "back_foam_rubber_front_length", "back_foam_rubber_middle_length", "back_foam_rubber_back_length"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "front_foam_rubber_color",
+                            "label_bg": "Цвят",
+                            "type": "simple",
+                            "properties": {
+                                "type": "text"
+                            }
+                        },
+                        {
+                            "name": "front_foam_rubber_width",
+                            "label_bg": "Ширина",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_foam_rubber_front_length",
+                            "label_bg": "Дължина в преден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_foam_rubber_middle_length",
+                            "label_bg": "Дължина в среда",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_foam_rubber_back_length",
+                            "label_bg": "Дължина в заден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_foam_rubber_color",
+                            "label_bg": "Цвят",
+                            "type": "simple",
+                            "properties": {
+                                "type": "text"
+                            }
+                        },
+                        {
+                            "name": "back_foam_rubber_width",
+                            "label_bg": "Ширина",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_foam_rubber_front_length",
+                            "label_bg": "Дължина в преден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_foam_rubber_middle_length",
+                            "label_bg": "Дължина в среда",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_foam_rubber_back_length",
+                            "label_bg": "Дължина в заден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "tissue_tape",
+                    "label_bg": "Tissue лента",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "front_tissue_tape",
+                            "label_bg": "Предна tissue лента, mm",
+                            "fields": ["front_tissue_tape_free_state_width", "front_tissue_tape_stretched_state_width", "front_tissue_tape_length"]
+                        },
+                        {
+                            "name": "back_tissue_tape",
+                            "label_bg": "Задна tissue лента, mm",
+                            "fields": ["back_tissue_tape_free_state_width", "back_tissue_tape_stretched_state_width", "back_tissue_tape_length"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "front_tissue_tape_free_state_width",
+                            "label_bg": "Ширина в свободно състояние",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_tissue_tape_stretched_state_width",
+                            "label_bg": "Ширина в разпънато състояние",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "front_tissue_tape_length",
+                            "label_bg": "Дължина",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_tissue_tape_free_state_width",
+                            "label_bg": "Ширина в свободно състояние",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_tissue_tape_stretched_state_width",
+                            "label_bg": "Ширина в разпънато състояние",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_tissue_tape_length",
+                            "label_bg": "Дължина",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "pe_and_nonwoven_dimensions",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "backsheet_pe_width",
+                    "label_bg": "Ширина на PE на BackSheet, mm",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "backsheet_nonwoven_width",
+                    "label_bg": "Ширина на Nonwoven на BackSheet, mm",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "backsheet_pe_nonwoven_width_difference",
+                    "label_bg": "Разлика в ширините на PE и Nonwoven на BackSheet, mm",
+                    "type": "formula",
+                    "formula": "SUB_MULTIPLE",
+                    "formula_fields": [
+                        "backsheet_nonwoven_width",
+                        "backsheet_pe_width"
+                    ],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "hooks",
+            "label_bg": "",
+            "type": "group",
+            "grouped_headers": [
+                {
+                    "name": "hooks",
+                    "label_bg": "Hooks",
+                    "fields": ["hooks_type", "hooks_length", "hooks_length_2", "hooks_width", "hooks_color"]
+                }
+            ],
+            "group_fields": [
+                {
+                    "name": "diapers_folding",
+                    "label_bg": "Прегъване на пелените/гащите",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "back_ears_folding",
+                    "label_bg": "Прегъване на задни уши",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "hooks_type",
+                    "label_bg": "Вид hooks",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "hooks_length",
+                    "label_bg": "Дължина на hooks",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "hooks_length_2",
+                    "label_bg": "Дължина 2 на hooks",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "hooks_width",
+                    "label_bg": "Ширина на hooks",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "hooks_color",
+                    "label_bg": "Цвят на hooks",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "backsheet_print",
+                    "label_bg": "Принт на BackSheet",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "moisture_indicator",
+                    "label_bg": "Индикатор за влага",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "wetness_indicator",
+            "label_bg": "Wetness indicator",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "wi_length",
+                    "label_bg": "Дължина на WI",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "wi_width",
+                    "label_bg": "Ширина на WI",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "distance_from_front",
+                    "label_bg": "Отстояние от преден край на пелената",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "distance_from_back",
+                    "label_bg": "Отстояние от заден край на пелената",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "distance_from_side_on_lower_end",
+                    "label_bg": "Отстояние от страничен край на долен слой",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "wi_color_when_dry",
+                    "label_bg": "Цвят на WI в сухо състояние",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "wi_color_when_wet",
+                    "label_bg": "Цвят на WI в мокро състояние",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "channels",
+            "label_bg": "Канали",
+            "type": "tab_group",
+            "group_fields": [
+                {
+                    "name": "shape_count_length_width",
+                    "label_bg": "Форма, брой, дължина и ширина",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "width",
+                            "label_bg": "Ширина",
+                            "fields": ["width_front", "width_middle", "width_back"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "shape",
+                            "label_bg": "Форма/вид на каналите",
+                            "type": "simple",
+                            "properties": {
+                                "type": "text"
+                            }
+                        },
+                        {
+                            "name": "count",
+                            "label_bg": "Брой канали",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "length",
+                            "label_bg": "Дължина на каналите",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "width_front",
+                            "label_bg": "преден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "width_middle",
+                            "label_bg": "среда",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },{
+                            "name": "width_back",
+                            "label_bg": "заден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "distance_and_spacing",
+                    "label_bg": "Отстояние и разстояние на каналите",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "spacing",
+                            "label_bg": "Разстояние между каналите",
+                            "fields": ["spacing_front", "spacing_middle", "spacing_back"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "front_distance",
+                            "label_bg": "Отстояние от преден край на пелената",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_distance",
+                            "label_bg": "Отстояние от заден край на пелената",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "spacing_front",
+                            "label_bg": "преден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "spacing_middle",
+                            "label_bg": "среда",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "spacing_back",
+                            "label_bg": "заден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "distances_from_core",
+                    "label_bg": "Отстояния от сърцевината",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "distance_from_core_left_end",
+                            "label_bg": "Отстояние от ляв край на сърцевината",
+                            "fields": ["distance_from_core_left_end_front", "distance_from_core_left_end_middle", "distance_from_core_left_end_back"]
+                        },
+                        {
+                            "name": "distance_from_core_right_end",
+                            "label_bg": "Отстояние от десен край на сърцевината",
+                            "fields": ["distance_from_core_right_end_front", "distance_from_core_right_end_middle", "distance_from_core_right_end_back"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "front_distance",
+                            "label_bg": "Отстояние от преден край на сърцевината",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "back_distance",
+                            "label_bg": "Отстояние от заден край на сърцевината",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "distance_from_core_left_end_front",
+                            "label_bg": "преден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "distance_from_core_left_end_middle",
+                            "label_bg": "среда",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "distance_from_core_left_end_back",
+                            "label_bg": "заден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "distance_from_core_right_end_front",
+                            "label_bg": "преден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "distance_from_core_right_end_middle",
+                            "label_bg": "среда",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "distance_from_core_right_end_back",
+                            "label_bg": "заден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "cf_channels_length_width_and_spacing",
+                    "label_bg": "Дължина, ширина и отстояния на каналите на CF",
+                    "type": "group",
+                    "grouped_headers": [
+                        {
+                            "name": "spacing",
+                            "label_bg": "Разстояние между каналите на CF",
+                            "fields": ["spacing_front", "spacing_middle", "spacing_back"]
+                        }
+                    ],
+                    "group_fields": [
+                        {
+                            "name": "length",
+                            "label_bg": "Дължина",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "width",
+                            "label_bg": "Ширина",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "spacing_front",
+                            "label_bg": "преден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "spacing_middle",
+                            "label_bg": "среда",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        },
+                        {
+                            "name": "spacing_back",
+                            "label_bg": "заден край",
+                            "type": "simple",
+                            "properties": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "formation_adhesion",
+                    "label_bg": "Формиране/залепяне на каналите",
+                    "type": "group",
+                    "group_fields": [
+                        {
+                            "name": "formation_adhesion",
+                            "label_bg": "Формиране/залепяне на каналите",
+                            "type": "simple",
+                            "properties": {
+                                "type": "text"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "other",
+            "label_bg": "Други",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "comment",
+                    "label_bg": "Забележка",
+                    "type": "simple",
+                    "properties": {
+                        "type": "textarea"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "completion",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "analysis_complete",
+                    "label_bg": "Завършен анализ",
+                    "type": "checkbox",
+                    "multiple": false,
+                    "properties": {
+                        "type": "checkbox"
+                    },
+                    "options": {
+                        "completed": ""
+                    },
+                    "labels": {
+                        "not_completed": "samples_list.not_completed",
+                        "completed": "samples_list.completed"
+                    }
+                }
+            ]
+        }
+    ]
+}

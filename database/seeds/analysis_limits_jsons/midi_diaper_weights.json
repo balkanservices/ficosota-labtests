@@ -1,0 +1,33 @@
+{
+    "type": "midi",
+    "analysis_slug": "diaper_weights",
+
+    "definition": {
+        "ADL" : {
+            "50gsm": {
+                "lower_limit": "20.49",
+                "upper_limit": "29.05",
+                "alert_lower_limit": "21.83",
+                "alert_upper_limit": "27.61"
+            },
+            "50 gsm": {
+                "lower_limit": "20.49",
+                "upper_limit": "29.05",
+                "alert_lower_limit": "21.83",
+                "alert_upper_limit": "27.61"
+            },
+            "60gsm": {
+                "lower_limit": "20.58",
+                "upper_limit": "29.29",
+                "alert_lower_limit": "21.93",
+                "alert_upper_limit": "27.84"
+            },
+            "60 gsm": {
+                "lower_limit": "20.58",
+                "upper_limit": "29.29",
+                "alert_lower_limit": "21.93",
+                "alert_upper_limit": "27.84"
+            }
+        }
+    }
+}

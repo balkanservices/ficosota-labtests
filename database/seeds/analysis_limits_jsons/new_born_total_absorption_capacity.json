@@ -1,0 +1,11 @@
+{
+    "type": "new_born",
+    "analysis_slug": "total_absorption_capacity",
+
+    "definition": {
+        "data__total_absorption_capacity" : {
+            "lower_limit": "280",
+            "upper_limit": null
+        }
+    }
+}

@@ -1,0 +1,190 @@
+{
+    "name": "Количество суперабсорбент (SAP)",
+    "name_short": "SAP Qty",
+    "slug": "superabsorbent_quantity",
+
+    "definition": [
+        {
+            "name": "weights",
+            "label_bg": "Маси",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "sample_weight_standard",
+                    "label_bg": "Маса на пробата standard, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "blank_value",
+                    "label_bg": "Blank value",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "consumption_1",
+                    "label_bg": "Consumption 1",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "consumption_2",
+                    "label_bg": "Consumption 2",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "ca_bondability",
+                    "label_bg": "Ca-bondability (CaB)",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "sap_quantity",
+            "label_bg": "Количество SAP",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "weight",
+                    "label_bg": "Маса на пелената, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01",
+                        "readonly": true
+                    }
+                },
+                {
+                    "name": "core_weight",
+                    "label_bg": "Маса на сърцевината, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "sap_quantity",
+                    "label_bg": "Количество SAP, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "recipe_sap_quantity",
+                    "label_bg": "Количество SAP по рецепта, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "fluff_pulp_quantity",
+                    "label_bg": "Количество Fluff pulp, g",
+                    "type": "formula",
+                    "formula": "SUB_MULTIPLE",
+                    "formula_fields": ["core_weight", "sap_quantity", "curly_fibers", "materials_mass"],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "curly_fibers",
+                    "label_bg": "Curly fibers, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "materials_mass",
+                    "label_bg": "Маса на материалите, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "sap_fluff_pulp_ratio",
+                    "label_bg": "Съотношение между SAP и Fluff pulp, %",
+                    "type": "formula",
+                    "formula": "SAP_FLUFF_PULP",
+                    "formula_fields": {"dividend": "sap_quantity", "divisor": "fluff_pulp_quantity"},
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "sap_total_weight_ratio",
+                    "label_bg": "SAP/Total weight, %",
+                    "type": "formula",
+                    "formula": "PERCENTAGE",
+                    "formula_fields": {"part": "sap_quantity", "total": "weight"},
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "other",
+            "label_bg": "Други",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "comment",
+                    "label_bg": "Забележка",
+                    "type": "simple",
+                    "properties": {
+                        "type": "textarea"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "completion",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "analysis_complete",
+                    "label_bg": "Завършен анализ",
+                    "type": "checkbox",
+                    "multiple": false,
+                    "properties": {
+                        "type": "checkbox"
+                    },
+                    "options": {
+                        "completed": ""
+                    },
+                    "labels": {
+                        "not_completed": "samples_list.not_completed",
+                        "completed": "samples_list.completed"
+                    }
+                }
+            ]
+        }
+    ]
+}

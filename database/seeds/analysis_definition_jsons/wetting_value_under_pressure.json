@@ -1,0 +1,252 @@
+{
+    "name": "Стойност на навлажняване под налягане",
+    "name_short": "Ст.навл.п.нал.",
+    "slug": "wetting_value_under_pressure",
+
+    "definition": [
+        {
+            "name": "infusion",
+            "label_bg": "Вливане",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "infusion_1",
+                    "label_bg": "вливане № 1,g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "infusion_2",
+                    "label_bg": "вливане № 2,g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "infusion_3",
+                    "label_bg": "вливане № 3,g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "total_rewet",
+                    "label_bg": "Total Rewet",
+                    "type": "formula",
+                    "formula": "SUM",
+                    "formula_fields": ["infusion_1", "infusion_2", "infusion_3"],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "absorption",
+            "label_bg": "Време за абсорбиране",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "absorption_1",
+                    "label_bg": "време за абсорбиране № 1,s",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "absorption_2",
+                    "label_bg": "време за абсорбиране № 2,s",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "absorption_3",
+                    "label_bg": "време за абсорбиране № 3,s",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "absorption_speed_1",
+                    "label_bg": "скорост на абсорбция № 1, g/s",
+                    "type": "formula",
+                    "formula": "DIV",
+                    "formula_fields": {"dividend": 100, "divisor": "absorption_1"},
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "absorption_speed_2",
+                    "label_bg": "скорост на абсорбция № 2, g/s",
+                    "type": "formula",
+                    "formula": "DIV",
+                    "formula_fields": {"dividend": 50, "divisor": "absorption_2"},
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "absorption_speed_3",
+                    "label_bg": "скорост на абсорбция № 3, g/s",
+                    "type": "formula",
+                    "formula": "DIV",
+                    "formula_fields": {"dividend": 50, "divisor": "absorption_3"},
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "wicking_rate",
+            "label_bg": "Wicking rate",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "wicking_rate_1",
+                    "label_bg": "wicking rate 1, mm",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "wicking_rate_2",
+                    "label_bg": "wicking rate 2, mm",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "wicking_rate_3",
+                    "label_bg": "wicking rate 3, mm",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "thickness",
+            "label_bg": "Дебелини",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "dry_front",
+                    "label_bg": "Дебелина в сухо състояние – преден край",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "dry_center",
+                    "label_bg": "Дебелина в сухо състояние – среда",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "dry_back",
+                    "label_bg": "Дебелина в сухо състояние – заден край",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "wet_left",
+                    "label_bg": "Дебелина в мокро състояние – лява страна",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "wet_right",
+                    "label_bg": "Дебелина в мокро състояние – дясна страна",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "other",
+            "label_bg": "Други",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "barrier_leaks",
+                    "label_bg": "Изтичане от бариери",
+                    "type": "simple",
+                    "properties": {
+                        "type": "textarea"
+                    }
+                },
+                {
+                    "name": "bs_leak",
+                    "label_bg": "Изтичане през BS",
+                    "type": "simple",
+                    "properties": {
+                        "type": "textarea"
+                    }
+                },
+                {
+                    "name": "comment",
+                    "label_bg": "Забележка",
+                    "type": "simple",
+                    "properties": {
+                        "type": "textarea"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "completion",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "analysis_complete",
+                    "label_bg": "Завършен анализ",
+                    "type": "checkbox",
+                    "multiple": false,
+                    "properties": {
+                        "type": "checkbox"
+                    },
+                    "options": {
+                        "completed": ""
+                    },
+                    "labels": {
+                        "not_completed": "samples_list.not_completed",
+                        "completed": "samples_list.completed"
+                    }
+                }
+            ]
+        }
+    ]
+}

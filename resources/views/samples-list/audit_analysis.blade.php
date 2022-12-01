@@ -1,0 +1,92 @@
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    @lang('products.audit.title')
+
+                    <a style="position: absolute; right: 25px; top: 6px;" href="{{route('samples_list.do_analysis', ['id' => $samplesPackage->id, 'analysis' => $analysis, 'samplesIds' => 'all'])}}" class="btn btn-sm btn-success">@lang('samples_list.back_to_analysis')</a>
+                </div>
+
+                <div class="panel-body">
+                    @foreach ($auditLog as $diff)
+                        @foreach($diff->getModified() as $field => $value)
+                            @if(in_array($field, ['value']))
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <strong>{{ $diff->user->name }}</strong> {{ \Carbon\Carbon::parse($diff->created_at)->diffForHumans() }}
+                                </div>
+                                <div class="col-md-3">
+                                    @php ($additionalLabelComponent = '')
+
+                                    @if($diff->auditable_type == 'App\AnalysisAttribute')
+                                        @php ($attribute = App\AnalysisAttribute::find($diff->auditable_id))
+
+                                        @if($analysis != 'color_stability')
+                                            @lang('samples_list.diaper')
+
+                                            {!! $attribute ? $attribute->analysis->sample->weight . "g :<br />" : "" !!}
+                                        @endif
+
+                                        @php ($additionalLabelComponent = 'analysis_fields.' . $attribute->analysis->definition->slug . '.' . $attribute->attribute)
+
+                                        @lang( 'samples_list.' . $additionalLabelComponent )
+                                    @else
+                                        @lang( 'samples_list.' . $additionalLabelComponent . $field )
+                                    @endif
+
+
+                                </div>
+                                <div class="col-md-3" style="background: #ffe9e9" class="deleted-line">
+                                    @if($field == 'qa_journal_id')
+                                        @if(isset($value["old"]))
+                                            @php ($qaJournal = App\QaJournal::find($value["old"]))
+                                            {{ $qaJournal ? $qaJournal->getName() : "" }}
+                                        @endif
+                                    @else
+                                        {{ isset($value["old"]) ? $value["old"]: "" }}
+                                    @endif
+                                </div>
+                                <div class="col-md-3" style="background: #e9ffe9" class="added-line">
+                                    @if($field == 'qa_journal_id')
+                                        @if(isset($value["new"]))
+                                            @php ($qaJournal = App\QaJournal::find($value["new"]))
+                                            {{ $qaJournal ? $qaJournal->getName() : "" }}
+                                        @endif
+                                    @else
+                                        {{ isset($value["new"]) ? $value["new"]: "" }}
+                                    @endif
+                                </div>
+                            </div>
+                            <hr />
+                            @endif
+                        @endforeach
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+
+@section('css_files')
+<link href="{{ asset('css/bootstrap-datetimepicker.min.css') }}" rel="stylesheet">
+@endsection
+
+@section('javascript')
+<script src="{{ asset('js/moment.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap-datetimepicker.min.js') }}"></script>
+
+<script>
+
+    var editor;
+    $.ajaxSetup({
+    headers: {
+    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+    });
+</script>
+@endsection

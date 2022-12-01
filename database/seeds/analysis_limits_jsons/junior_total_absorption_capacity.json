@@ -1,0 +1,11 @@
+{
+    "type": "junior",
+    "analysis_slug": "total_absorption_capacity",
+
+    "definition": {
+        "data__total_absorption_capacity" : {
+            "lower_limit": "500",
+            "upper_limit": null
+        }
+    }
+}

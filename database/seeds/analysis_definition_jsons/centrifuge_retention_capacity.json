@@ -1,0 +1,599 @@
+{
+    "name": "Centrifuge Retention Capacity (CRC)",
+    "name_short": "CRC",
+    "slug": "centrifuge_retention_capacity",
+
+    "definition": [
+        {
+            "name": "data_1",
+            "label_bg": "Данни 1",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "sap_weight",
+                    "label_bg": "Маса SAP, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.001"
+                    }
+                },
+                {
+                    "name": "package_weight",
+                    "label_bg": "Маса пакетче, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.001"
+                    }
+                },
+                {
+                    "name": "weight_after_draining",
+                    "label_bg": "Маса след отцеждане, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "weight_after_centrifuge",
+                    "label_bg": "Маса след центрофугиране, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "absorption_capacity",
+                    "label_bg": "Absorption Capacity (AC), g/g",
+                    "type": "formula",
+                    "formula": "SUB_DIV",
+                    "formula_fields": {
+                        "first": "weight_after_draining",
+                        "second": "package_weight",
+                        "divisor": "sap_weight"
+                    },
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "centrifuge_retention_capacity",
+                    "label_bg": "Centrifuge Retention Capacity (CRC), g/g",
+                    "type": "formula",
+                    "formula": "SUB_DIV",
+                    "formula_fields": {
+                        "first": "weight_after_centrifuge",
+                        "second": "package_weight",
+                        "divisor": "sap_weight"
+                    },
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "data_2",
+            "label_bg": "Данни 2",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "sap_weight",
+                    "label_bg": "Маса SAP, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.001"
+                    }
+                },
+                {
+                    "name": "package_weight",
+                    "label_bg": "Маса пакетче, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.001"
+                    }
+                },
+                {
+                    "name": "weight_after_draining",
+                    "label_bg": "Маса след отцеждане, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "weight_after_centrifuge",
+                    "label_bg": "Маса след центрофугиране, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "absorption_capacity",
+                    "label_bg": "Absorption Capacity (AC), g/g",
+                    "type": "formula",
+                    "formula": "SUB_DIV",
+                    "formula_fields": {
+                        "first": "weight_after_draining",
+                        "second": "package_weight",
+                        "divisor": "sap_weight"
+                    },
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "centrifuge_retention_capacity",
+                    "label_bg": "Centrifuge Retention Capacity (CRC), g/g",
+                    "type": "formula",
+                    "formula": "SUB_DIV",
+                    "formula_fields": {
+                        "first": "weight_after_centrifuge",
+                        "second": "package_weight",
+                        "divisor": "sap_weight"
+                    },
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "data_3",
+            "label_bg": "Данни 3",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "sap_weight",
+                    "label_bg": "Маса SAP, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.001"
+                    }
+                },
+                {
+                    "name": "package_weight",
+                    "label_bg": "Маса пакетче, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.001"
+                    }
+                },
+                {
+                    "name": "weight_after_draining",
+                    "label_bg": "Маса след отцеждане, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "weight_after_centrifuge",
+                    "label_bg": "Маса след центрофугиране, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "absorption_capacity",
+                    "label_bg": "Absorption Capacity (AC), g/g",
+                    "type": "formula",
+                    "formula": "SUB_DIV",
+                    "formula_fields": {
+                        "first": "weight_after_draining",
+                        "second": "package_weight",
+                        "divisor": "sap_weight"
+                    },
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "centrifuge_retention_capacity",
+                    "label_bg": "Centrifuge Retention Capacity (CRC), g/g",
+                    "type": "formula",
+                    "formula": "SUB_DIV",
+                    "formula_fields": {
+                        "first": "weight_after_centrifuge",
+                        "second": "package_weight",
+                        "divisor": "sap_weight"
+                    },
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "data_4",
+            "label_bg": "Данни 4",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "sap_weight",
+                    "label_bg": "Маса SAP, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.001"
+                    }
+                },
+                {
+                    "name": "package_weight",
+                    "label_bg": "Маса пакетче, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.001"
+                    }
+                },
+                {
+                    "name": "weight_after_draining",
+                    "label_bg": "Маса след отцеждане, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "weight_after_centrifuge",
+                    "label_bg": "Маса след центрофугиране, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "absorption_capacity",
+                    "label_bg": "Absorption Capacity (AC), g/g",
+                    "type": "formula",
+                    "formula": "SUB_DIV",
+                    "formula_fields": {
+                        "first": "weight_after_draining",
+                        "second": "package_weight",
+                        "divisor": "sap_weight"
+                    },
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "centrifuge_retention_capacity",
+                    "label_bg": "Centrifuge Retention Capacity (CRC), g/g",
+                    "type": "formula",
+                    "formula": "SUB_DIV",
+                    "formula_fields": {
+                        "first": "weight_after_centrifuge",
+                        "second": "package_weight",
+                        "divisor": "sap_weight"
+                    },
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "data_5",
+            "label_bg": "Данни 5",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "sap_weight",
+                    "label_bg": "Маса SAP, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.001"
+                    }
+                },
+                {
+                    "name": "package_weight",
+                    "label_bg": "Маса пакетче, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.001"
+                    }
+                },
+                {
+                    "name": "weight_after_draining",
+                    "label_bg": "Маса след отцеждане, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "weight_after_centrifuge",
+                    "label_bg": "Маса след центрофугиране, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "absorption_capacity",
+                    "label_bg": "Absorption Capacity (AC), g/g",
+                    "type": "formula",
+                    "formula": "SUB_DIV",
+                    "formula_fields": {
+                        "first": "weight_after_draining",
+                        "second": "package_weight",
+                        "divisor": "sap_weight"
+                    },
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "centrifuge_retention_capacity",
+                    "label_bg": "Centrifuge Retention Capacity (CRC), g/g",
+                    "type": "formula",
+                    "formula": "SUB_DIV",
+                    "formula_fields": {
+                        "first": "weight_after_centrifuge",
+                        "second": "package_weight",
+                        "divisor": "sap_weight"
+                    },
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "data_6",
+            "label_bg": "Данни 6",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "sap_weight",
+                    "label_bg": "Маса SAP, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.001"
+                    }
+                },
+                {
+                    "name": "package_weight",
+                    "label_bg": "Маса пакетче, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.001"
+                    }
+                },
+                {
+                    "name": "weight_after_draining",
+                    "label_bg": "Маса след отцеждане, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "weight_after_centrifuge",
+                    "label_bg": "Маса след центрофугиране, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "absorption_capacity",
+                    "label_bg": "Absorption Capacity (AC), g/g",
+                    "type": "formula",
+                    "formula": "SUB_DIV",
+                    "formula_fields": {
+                        "first": "weight_after_draining",
+                        "second": "package_weight",
+                        "divisor": "sap_weight"
+                    },
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "centrifuge_retention_capacity",
+                    "label_bg": "Centrifuge Retention Capacity (CRC), g/g",
+                    "type": "formula",
+                    "formula": "SUB_DIV",
+                    "formula_fields": {
+                        "first": "weight_after_centrifuge",
+                        "second": "package_weight",
+                        "divisor": "sap_weight"
+                    },
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "data_avg",
+            "label_bg": "Средни стойности",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "sap_weight",
+                    "label_bg": "Маса SAP, g",
+                    "type": "formula",
+                    "formula": "AVG",
+                    "formula_fields": [
+                        "data_1__sap_weight",
+                        "data_2__sap_weight",
+                        "data_3__sap_weight",
+                        "data_4__sap_weight",
+                        "data_5__sap_weight",
+                        "data_6__sap_weight"
+                    ],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.001"
+                    }
+                },
+                {
+                    "name": "package_weight",
+                    "label_bg": "Маса пакетче, g",
+                    "type": "formula",
+                    "formula": "AVG",
+                    "formula_fields": [
+                        "data_1__package_weight",
+                        "data_2__package_weight",
+                        "data_3__package_weight",
+                        "data_4__package_weight",
+                        "data_5__package_weight",
+                        "data_6__package_weight"
+                    ],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.001"
+                    }
+                },
+                {
+                    "name": "weight_after_draining",
+                    "label_bg": "Маса след отцеждане, g",
+                    "type": "formula",
+                    "formula": "AVG",
+                    "formula_fields": [
+                        "data_1__weight_after_draining",
+                        "data_2__weight_after_draining",
+                        "data_3__weight_after_draining",
+                        "data_4__weight_after_draining",
+                        "data_5__weight_after_draining",
+                        "data_6__weight_after_draining"
+                    ],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "weight_after_centrifuge",
+                    "label_bg": "Маса след центрофугиране, g",
+                    "type": "formula",
+                    "formula": "AVG",
+                    "formula_fields": [
+                        "data_1__weight_after_centrifuge",
+                        "data_2__weight_after_centrifuge",
+                        "data_3__weight_after_centrifuge",
+                        "data_4__weight_after_centrifuge",
+                        "data_5__weight_after_centrifuge",
+                        "data_6__weight_after_centrifuge"
+                    ],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "absorption_capacity",
+                    "label_bg": "Absorption Capacity (AC), g/g",
+                    "type": "formula",
+                    "formula": "AVG",
+                    "formula_fields": [
+                        "data_1__absorption_capacity",
+                        "data_2__absorption_capacity",
+                        "data_3__absorption_capacity",
+                        "data_4__absorption_capacity",
+                        "data_5__absorption_capacity",
+                        "data_6__absorption_capacity"
+                    ],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "centrifuge_retention_capacity",
+                    "label_bg": "Centrifuge Retention Capacity (CRC), g/g",
+                    "type": "formula",
+                    "formula": "AVG",
+                    "formula_fields": [
+                        "data_1__centrifuge_retention_capacity",
+                        "data_2__centrifuge_retention_capacity",
+                        "data_3__centrifuge_retention_capacity",
+                        "data_4__centrifuge_retention_capacity",
+                        "data_5__centrifuge_retention_capacity",
+                        "data_6__centrifuge_retention_capacity"
+                    ],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "other",
+            "label_bg": "Други",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "comment",
+                    "label_bg": "Забележка",
+                    "type": "simple",
+                    "properties": {
+                        "type": "textarea"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "completion",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "analysis_complete",
+                    "label_bg": "Завършен анализ",
+                    "type": "checkbox",
+                    "multiple": false,
+                    "properties": {
+                        "type": "checkbox"
+                    },
+                    "options": {
+                        "completed": ""
+                    },
+                    "labels": {
+                        "not_completed": "samples_list.not_completed",
+                        "completed": "samples_list.completed"
+                    }
+                }
+            ]
+        }
+    ]
+}

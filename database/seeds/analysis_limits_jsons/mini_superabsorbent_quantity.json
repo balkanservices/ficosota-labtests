@@ -1,0 +1,11 @@
+{
+    "type": "mini",
+    "analysis_slug": "superabsorbent_quantity",
+
+    "definition": {
+        "sap_quantity__sap_quantity" : {
+            "lower_limit": "4.8",
+            "upper_limit": "7.8"
+        }
+    }
+}

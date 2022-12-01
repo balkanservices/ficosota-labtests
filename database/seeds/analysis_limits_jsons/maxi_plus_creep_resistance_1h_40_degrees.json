@@ -1,0 +1,71 @@
+{
+    "type": "maxi_plus",
+    "analysis_slug": "creep_resistance_1h_40_degrees",
+
+    "definition": {
+        "cuff_elastics__left__outside" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        },
+        "cuff_elastics__left__middle_1" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        },
+        "cuff_elastics__left__middle_2" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        },
+        "cuff_elastics__left__middle_3" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        },
+        "cuff_elastics__left__inside" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        },
+        "cuff_elastics__right__outside" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        },
+        "cuff_elastics__right__middle_1" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        },
+        "cuff_elastics__right__middle_2" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        },
+        "cuff_elastics__right__middle_3" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        },
+        "cuff_elastics__right__inside" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        },
+        "leg_elastics__left__outside" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        },
+        "leg_elastics__left__middle" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        },
+        "leg_elastics__left__inside" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        },
+        "leg_elastics__right__outside" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        },
+        "leg_elastics__right__middle" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        },
+        "leg_elastics__right__inside" : {
+            "lower_limit":  null,
+            "upper_limit": "40"
+        }
+    }
+}

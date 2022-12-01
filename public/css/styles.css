@@ -1,0 +1,149 @@
+.menu {
+	margin-bottom: 10px;
+}
+
+.samples-row {
+	margin: 15px 0;
+}
+
+.field-label {
+	height: 35px;
+}
+
+.fields-row {
+	word-spacing: -1em;
+	letter-spacing: -1em;
+	overflow:hidden;
+}
+
+.field-div-text, .field-div-number, .field-div-date, .field-div-time {
+	height: 90px;
+	display: inline-block;
+	word-spacing: normal;
+	vertical-align: top;
+	letter-spacing: normal;
+}
+
+.field-div-textarea {
+	height: 130px;
+	display: inline-block;
+	word-spacing: normal;
+	vertical-align: top;
+	letter-spacing: normal;
+	/*float:none;*/
+}
+
+.even, .odd {
+	height: 37px;
+}
+
+.analysis-table > thead {
+	font-size: 10px;
+}
+
+.DTE_Field_InputControl {
+	font-size: 8px;
+}
+
+input[type="number"]
+{
+    /*font-size:10px;*/
+	transform: scale(0.8);
+	padding: 0 0;
+}
+
+.dataTable > tbody > tr > td {
+	padding: 8px 2px;
+	/*text-align: center;*/
+}
+
+.dataTable > thead > tr > td {
+	text-align: left;
+}
+
+.btn-group {
+	float: left;
+}
+
+.recipe-buttons .buttons-create {
+    margin-top: 5px;
+    background-color: #EEE;
+}
+
+.ingredient-name-div {
+    padding-top: 6px;
+}
+
+textarea[type='textarea'] {
+    width: 100% !important;
+}
+
+.analysis-btn, .average-values-btn {
+    height: 55px;
+    margin-bottom: 10px;
+}
+
+.main-material {
+    background-color: #9cf4b5 !important;
+}
+
+.has-changed {
+    color: #c66255 !important;
+}
+
+.above-limit {
+    background-color: #ff0000 !important;
+}
+
+.below-limit {
+    background-color: #ff9999 !important;
+}
+
+.alert-lower-limit {
+    background-color: #e5c009 !important;
+}
+
+.alert-upper-limit {
+    background-color: #fcd825 !important;
+}
+
+.required {
+    border-style: solid;
+    border-color: #ff0000;
+}
+
+.abl_standing {
+   border-radius:5px;
+   border-bottom-width: 4px;
+   border-bottom-style: solid;
+   border-bottom-color: #eabc31;
+}
+
+.abl_sideways {
+   border-radius:5px;
+   border-bottom-width: 4px;
+   border-bottom-style: solid;
+   border-bottom-color: #31ea7e;
+}
+
+.abl_belly_back {
+   border-radius:5px;
+   border-bottom-width: 4px;
+   border-bottom-style: solid;
+   border-bottom-color: #c831ea;
+}
+
+.container-wide {
+    width: 1400px;
+}
+
+.samples-lists-col-header {
+    white-space: initial;
+    font-size: 10px;
+    width: 100%;
+}
+
+#DTE_Field_completion__analysis_complete_0 {
+    transform: scale(1.5);
+	width: 20px;
+}

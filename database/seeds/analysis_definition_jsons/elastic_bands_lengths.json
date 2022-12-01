@@ -1,0 +1,212 @@
+{
+    "name": "Дължини на ластици",
+    "name_short": "Дълж.ласт.",
+    "slug": "elastic_bands_lengths",
+
+    "definition": [
+        {
+            "name": "cuff_elastics",
+            "label_bg": "CUFF elastics",
+            "type": "group",
+            "grouped_headers": [
+                {
+                    "name": "left",
+                    "label_bg": "left",
+                    "fields": ["left__outside", "left__middle_1", "left__middle_2", "left__middle_3", "left__inside"]
+                },
+                {
+                    "name": "right",
+                    "label_bg": "right",
+                    "fields": ["right__outside", "right__middle_1", "right__middle_2", "right__middle_3", "right__inside"]
+                }
+            ],
+            "group_fields": [
+                {
+                    "name": "left__outside",
+                    "label_bg": "външен",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "left__middle_1",
+                    "label_bg": "среден",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "left__middle_2",
+                    "label_bg": "среден",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "left__middle_3",
+                    "label_bg": "среден",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "left__inside",
+                    "label_bg": "вътрешен",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "right__outside",
+                    "label_bg": "външен",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "right__middle_1",
+                    "label_bg": "среден",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "right__middle_2",
+                    "label_bg": "среден",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "right__middle_3",
+                    "label_bg": "среден",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "right__inside",
+                    "label_bg": "вътрешен",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "leg_elastics",
+            "label_bg": "LEG elastics",
+            "type": "group",
+            "grouped_headers": [
+                {
+                    "name": "left",
+                    "label_bg": "left",
+                    "fields": ["left__outside", "left__middle", "left__inside"]
+                },
+                {
+                    "name": "right",
+                    "label_bg": "right",
+                    "fields": ["right__outside", "right__middle", "right__inside"]
+                }
+            ],
+            "group_fields": [
+                {
+                    "name": "left__outside",
+                    "label_bg": "външен",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "left__middle",
+                    "label_bg": "среден",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "left__inside",
+                    "label_bg": "вътрешен",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "right__outside",
+                    "label_bg": "външен",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "right__middle",
+                    "label_bg": "среден",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "right__inside",
+                    "label_bg": "вътрешен",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "other",
+            "label_bg": "Други",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "comment",
+                    "label_bg": "Забележка",
+                    "type": "simple",
+                    "properties": {
+                        "type": "textarea"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "completion",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "analysis_complete",
+                    "label_bg": "Завършен анализ",
+                    "type": "checkbox",
+                    "multiple": false,
+                    "properties": {
+                        "type": "checkbox"
+                    },
+                    "options": {
+                        "completed": ""
+                    },
+                    "labels": {
+                        "not_completed": "samples_list.not_completed",
+                        "completed": "samples_list.completed"
+                    }
+                }
+            ]
+        }
+    ]
+}

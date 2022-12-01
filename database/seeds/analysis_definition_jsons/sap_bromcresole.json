@@ -1,0 +1,77 @@
+{
+    "name": "Разпределение на SAP с индикатор Bromcresole",
+    "name_short": "SAP_Bromcresole",
+    "slug": "sap_bromcresole",
+
+    "definition": [
+        {
+            "name": "table_1",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "top_sheet_side",
+                    "label_bg": "Top Sheet side",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "disty_layer",
+                    "label_bg": "Dusty layer",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "mix_sap_fluff_pulp",
+                    "label_bg": "Mix SAP/Fluff pulp",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "other",
+            "label_bg": "Други",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "comment",
+                    "label_bg": "Забележка",
+                    "type": "simple",
+                    "properties": {
+                        "type": "textarea"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "completion",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "analysis_complete",
+                    "label_bg": "Завършен анализ",
+                    "type": "checkbox",
+                    "multiple": false,
+                    "properties": {
+                        "type": "checkbox"
+                    },
+                    "options": {
+                        "completed": ""
+                    },
+                    "labels": {
+                        "not_completed": "samples_list.not_completed",
+                        "completed": "samples_list.completed"
+                    }
+                }
+            ]
+        }
+    ]
+}

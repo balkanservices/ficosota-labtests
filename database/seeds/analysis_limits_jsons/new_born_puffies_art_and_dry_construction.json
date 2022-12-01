@@ -1,0 +1,192 @@
+{
+    "type": "new_born",
+    "analysis_slug": "construction",
+
+    "definition": {
+        "ears__height_and_width__ears_length_right_back" : {
+            "lower_limit": "80",
+            "upper_limit": "90"
+        },
+        "ears__height_and_width__ears_length_left_back" : {
+            "lower_limit": "80",
+            "upper_limit": "90"
+        },
+        "ears__height_and_width__ears_width_right_back" : {
+            "lower_limit": "55",
+            "upper_limit": "65"
+        },
+        "ears__height_and_width__ears_width_left_back" : {
+            "lower_limit": "55",
+            "upper_limit": "65"
+        },
+        "ears__overlapping__back_ears_diaper_overlapping_right" : {
+            "lower_limit": "18",
+            "upper_limit": "22"
+        },
+        "ears__overlapping__back_ears_diaper_overlapping_left" : {
+            "lower_limit": "18",
+            "upper_limit": "22"
+        },
+        "ears__placement_and_color__back_ears_placement_right" : {
+            "lower_limit": "18",
+            "upper_limit": "22"
+        },
+        "ears__placement_and_color__back_ears_placement_left" : {
+            "lower_limit": "18",
+            "upper_limit": "22"
+        },
+
+
+        "tape_tabs__tape_tabs_to_front_end_distance_right_tt" : {
+            "lower_limit": "35",
+            "upper_limit": "45"
+        },
+        "tape_tabs__tape_tabs_to_front_end_distance_left_tt" : {
+            "lower_limit": "35",
+            "upper_limit": "45"
+        },
+        "hooks__hooks_width" : {
+            "lower_limit": "45",
+            "upper_limit": "47"
+        },
+
+
+        "landing_zone__landing_zone_length" : {
+            "lower_limit": "33",
+            "upper_limit": "37"
+        },
+        "landing_zone__landing_zone_width" : {
+            "lower_limit": "136",
+            "upper_limit": "140"
+        },
+        "landing_zone__langing_zone_position_right" : {
+            "lower_limit": "25",
+            "upper_limit": "35"
+        },
+        "landing_zone__langing_zone_position_middle" : {
+            "lower_limit": "25",
+            "upper_limit": "35"
+        },
+        "landing_zone__langing_zone_position_left" : {
+            "lower_limit": "25",
+            "upper_limit": "35"
+        },
+
+        "round_elastics__leg_round_elastics_distance__left_elastics_outside_middle_distance" : {
+            "lower_limit": "3",
+            "upper_limit": "7"
+        },
+        "round_elastics__leg_round_elastics_distance__left_elastics_1st_middle_2nd_middle_distance" : {
+            "lower_limit": "3",
+            "upper_limit": "7"
+        },
+        "round_elastics__leg_round_elastics_distance__left_elastics_middle_inside_distance" : {
+            "lower_limit": "3",
+            "upper_limit": "7"
+        },
+        "round_elastics__leg_round_elastics_distance__right_elastics_outside_middle_distance" : {
+            "lower_limit": "3",
+            "upper_limit": "7"
+        },
+        "round_elastics__leg_round_elastics_distance__right_elastics_1st_middle_2nd_middle_distance" : {
+            "lower_limit": "3",
+            "upper_limit": "7"
+        },
+        "round_elastics__leg_round_elastics_distance__right_elastics_middle_inside_distance" : {
+            "lower_limit": "3",
+            "upper_limit": "7"
+        },
+        "round_elastics__cuff_round_elastics_distance__right_elastics_middle_inside_distance" : {
+            "lower_limit": "3",
+            "upper_limit": "7"
+        },
+        "round_elastics__cuff_round_elastics_distance__right_elastics_outside_middle_distance" : {
+            "lower_limit": "3",
+            "upper_limit": "7"
+        },
+        "round_elastics__cuff_round_elastics_distance__left_elastics_middle_inside_distance" : {
+            "lower_limit": "3",
+            "upper_limit": "7"
+        },
+        "round_elastics__cuff_round_elastics_distance__left_elastics_outside_middle_distance" : {
+            "lower_limit": "3",
+            "upper_limit": "7"
+        },
+        "ears__barriers_height_and_adl__adl_length" : {
+            "lower_limit": "193",
+            "upper_limit": "197"
+        },
+        "ears__barriers_height_and_adl__adl_position_relative_to_front_end" : {
+            "lower_limit": "50",
+            "upper_limit": "60"
+        },
+        "ears__barriers_height_and_adl__barriers_height_right" : {
+            "lower_limit": "33",
+            "upper_limit": "39"
+        },
+        "ears__barriers_height_and_adl__barriers_height_left" : {
+            "lower_limit": "33",
+            "upper_limit": "39"
+        },
+        "general_dimensions__leg_cuffs__leg_cuffs_distance_back" : {
+            "lower_limit": "62",
+            "upper_limit": "74",
+            "alert_lower_limit": "65",
+            "alert_upper_limit": "71"
+        },
+        "general_dimensions__leg_cuffs__leg_cuffs_distance_front" : {
+            "lower_limit": "62",
+            "upper_limit": "74",
+            "alert_lower_limit": "65",
+            "alert_upper_limit": "71"
+        },
+        "general_dimensions__tack_down_and_code_spacing__tack_down_left_front" : {
+            "lower_limit": "52",
+            "upper_limit": "78",
+            "alert_lower_limit": "55",
+            "alert_upper_limit": "75"
+        },
+        "general_dimensions__tack_down_and_code_spacing__tack_down_left_back" : {
+            "lower_limit": "52",
+            "upper_limit": "78",
+            "alert_lower_limit": "55",
+            "alert_upper_limit": "75"
+        },
+        "general_dimensions__tack_down_and_code_spacing__tack_down_right_front" : {
+            "lower_limit": "52",
+            "upper_limit": "78",
+            "alert_lower_limit": "55",
+            "alert_upper_limit": "75"
+        },
+        "general_dimensions__tack_down_and_code_spacing__tack_down_right_back" : {
+            "lower_limit": "52",
+            "upper_limit": "78",
+            "alert_lower_limit": "55",
+            "alert_upper_limit": "75"
+        },
+        "general_dimensions__dimensions__external_dimensions_width" : {
+            "lower_limit": "197",
+            "upper_limit": "203"
+        },
+        "general_dimensions__dimensions__external_dimensions_length" : {
+            "lower_limit": "375",
+            "upper_limit": "385"
+        },
+        "general_dimensions__dimensions__internal_dimensions_length" : {
+            "lower_limit": "295",
+            "upper_limit": "315"
+        },
+        "general_dimensions__dimensions__internal_dimensions_front_width" : {
+            "lower_limit": "105",
+            "upper_limit": "115"
+        },
+        "general_dimensions__dimensions__internal_dimensions_center_width" : {
+            "lower_limit": "65",
+            "upper_limit": "75"
+        },
+        "general_dimensions__dimensions__internal_dimensions_back_width" : {
+            "lower_limit": "105",
+            "upper_limit": "115"
+        }
+    }
+}

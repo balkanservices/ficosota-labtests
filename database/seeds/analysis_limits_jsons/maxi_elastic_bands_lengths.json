@@ -1,0 +1,47 @@
+{
+    "type": "maxi",
+    "analysis_slug": "elastic_bands_lengths",
+
+    "definition": {
+        "leg_elastics__left__inside" : {
+            "lower_limit": "116",
+            "upper_limit": "136"
+        },
+        "leg_elastics__left__middle" : {
+            "lower_limit": "116",
+            "upper_limit": "136"
+        },
+        "leg_elastics__left__outside" : {
+            "lower_limit": "116",
+            "upper_limit": "136"
+        },
+        "leg_elastics__right__inside" : {
+            "lower_limit": "116",
+            "upper_limit": "136"
+        },
+        "leg_elastics__right__middle" : {
+            "lower_limit": "116",
+            "upper_limit": "136"
+        },
+        "leg_elastics__right__outside" : {
+            "lower_limit": "116",
+            "upper_limit": "136"
+        },
+        "cuff_elastics__left__inside" : {
+            "lower_limit": "116",
+            "upper_limit": "136"
+        },
+        "cuff_elastics__left__outside" : {
+            "lower_limit": "116",
+            "upper_limit": "136"
+        },
+        "cuff_elastics__right__inside" : {
+            "lower_limit": "116",
+            "upper_limit": "136"
+        },
+        "cuff_elastics__right__outside" : {
+            "lower_limit": "116",
+            "upper_limit": "136"
+        }
+    }
+}

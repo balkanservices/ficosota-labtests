@@ -1,0 +1,217 @@
+{
+    "name": "Absorption Before Leakage (ABL)",
+    "name_short": "ABL",
+    "slug": "absorbtion_before_leakage",
+
+    "definition": [
+        {
+            "name": "table_1",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "flow_rate",
+                    "label_bg": "Дебит, g/s",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "amount_of_injected_liquid",
+                    "label_bg": "Количество вливана течност, ml",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "calibration",
+                    "label_bg": "Калибриране, ml",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "mannequin_position",
+                    "label_bg": "Позиция на манекен – standing, belly/back, sideways",
+                    "type": "select",
+                    "multiple": false,
+                    "properties": {
+                        "type": "select"
+                    },
+                    "options": {
+                        "standing": "standing",
+                        "belly/back": "belly/back",
+                        "sideways": "sideways"
+                    }
+                },
+                {
+                    "name": "mannequin_gender",
+                    "label_bg": "Пол на манекен – момче/момиче",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "m_fields",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "m_dry_diaper",
+                    "label_bg": "M – суха пелена, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "readonly": true
+                    }
+                },
+                {
+                    "name": "m_after_inflow_completion",
+                    "label_bg": "M – след приключване на вливанията, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "m_unabsorbed_liquid",
+                    "label_bg": "M – неабсорбирана течност, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "m_leaked_liquid",
+                    "label_bg": "M – изтекла течност, g",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "m_difference",
+                    "label_bg": "M – разлика, g",
+                    "type": "formula",
+                    "formula": "SUB",
+                    "formula_fields": ["m_after_inflow_completion", "m_dry_diaper"],
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "table_2",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "position_when_leakage_occured",
+                    "label_bg": "Позиция при изтичането",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                },
+                {
+                    "name": "leakage_number_of_doses",
+                    "label_bg": "Изтичане, брой дози",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "wetness_indicator",
+            "label_bg": "Wetness indicator",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "wetness_indicator_color_change_start",
+                    "label_bg": "Начало на промяна на цвета на Wetness Indicator-а, sec",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "wetness_indicator_full_color_change",
+                    "label_bg": "Пълна промяна на цвета на wetness indicator-а, sec",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number"
+                    }
+                },
+                {
+                    "name": "liquid_distance_after_front_leakage",
+                    "label_bg": "Отстояние на течността след изтичане от преден край на пелената",
+                    "type": "simple",
+                    "properties": {
+                        "type": "number",
+                        "step": "0.01"
+                    }
+                },
+                {
+                    "name": "liquid_distance_after_back_leakage",
+                    "label_bg": "Отстояние на течността след изтичане от заден край на пелената",
+                    "type": "simple",
+                    "properties": {
+                        "type": "text"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "other",
+            "label_bg": "Други",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "comment",
+                    "label_bg": "Забележка",
+                    "type": "simple",
+                    "properties": {
+                        "type": "textarea"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "completion",
+            "label_bg": "",
+            "type": "group",
+            "group_fields": [
+                {
+                    "name": "analysis_complete",
+                    "label_bg": "Завършен анализ",
+                    "type": "checkbox",
+                    "multiple": false,
+                    "properties": {
+                        "type": "checkbox"
+                    },
+                    "options": {
+                        "completed": ""
+                    },
+                    "labels": {
+                        "not_completed": "samples_list.not_completed",
+                        "completed": "samples_list.completed"
+                    }
+                }
+            ]
+        }
+    ]
+}
